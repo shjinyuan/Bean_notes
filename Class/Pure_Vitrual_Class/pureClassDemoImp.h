@@ -17,25 +17,29 @@
 #define _PURECLASSDEMOIMP_H
 
 #include "pureClassDemo.h"
-
+using namespace std;
 class pureClassDemoImp:pureClassDemo{
 public:
-
+/*
 	pureClassDemoImp(){
 		basename = "pureClassDemoImp";
 		printf("[constructor] %s\n",__FUNCTION__);
 	}
 
 
-	void DisplayMessage(std::string){
+	void DisplayMessage(){
 		printf("%s: in %s %d\n",__FUNCTION__,__FILE__,__LINE__);
 	}
+*/
+	pureClassDemoImp();
+	void DisplayMessage();
 
 	void showName();
 };
 
+/*
 void pureClassDemoImp::showName(){
 	printf("myName is HappyNewYear\n");
 }
-
+*/
 #endif

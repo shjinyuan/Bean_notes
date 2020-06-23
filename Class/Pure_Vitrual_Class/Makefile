@@ -1,7 +1,9 @@
-CC=gcc
-objects=test
+CC=g++
+objects = pureClassDemoImp.o
 
 CFLAGS+=-g -Wall -DDEBUG
+
+
 
 all:$(objects)
 #	$(CC) $<

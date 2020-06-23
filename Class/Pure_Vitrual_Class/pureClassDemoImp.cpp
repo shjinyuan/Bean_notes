@@ -14,18 +14,16 @@
  */
 #include <iostream>
 #include "pureClassDemoImp.h"
-/*
 pureClassDemoImp::pureClassDemoImp(){
 	basename = "pureClassDemoImp";
 	printf("[constructor] %s\n",__FUNCTION__);
 }
 
 
-void pureClassDemoImp::DisplayMessage(std::string){
-			printf("%s: in %s %d\n",__FUNCTION__,__FILE__,__LINE__);
+void pureClassDemoImp::DisplayMessage(){
+	printf("%s: in %s %d\n",__FUNCTION__,__FILE__,__LINE__);
 };
 
 void pureClassDemoImp::showName(){
 	printf("myName is HappyNewYear\n");
 }
-*/

@@ -16,7 +16,10 @@
 #include "pureClassDemoImp.h"
 
 int main(){
-	pureClassDemoImp *test_demo = new pureClassDemoImp();
-	test_demo->DisplayMessage(" hahaha~ ");
-	test_demo->showName();
+	//pureClassDemoImp *test_demo = new pureClassDemoImp();
+	//test_demo->DisplayMessage();
+	//test_demo->showName();
+	pureClassDemoImp test_demo;
+	test_demo.DisplayMessage();
+	test_demo.showName();
 }
