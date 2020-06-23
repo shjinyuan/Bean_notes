@@ -1,0 +1,67 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC=g++$/;"	m
+Person	Person.cpp	/^Person::Person(string& name):$/;"	f	class:Person	signature:(string& name)
+Person	Person.h	/^    Person(string& name);$/;"	p	class:Person	access:public	signature:(string& name)
+Person	Person.h	/^class Person {$/;"	c
+Person::Person	Person.cpp	/^Person::Person(string& name):$/;"	f	class:Person	signature:(string& name)
+Person::Person	Person.h	/^    Person(string& name);$/;"	p	class:Person	access:public	signature:(string& name)
+Person::getAge	Person.cpp	/^int Person::getAge() const {$/;"	f	class:Person	signature:() const
+Person::getAge	Person.h	/^    int getAge() const;$/;"	p	class:Person	access:public	signature:() const
+Person::getName	Person.cpp	/^string& Person::getName() const {$/;"	f	class:Person	signature:() const
+Person::getName	Person.h	/^    string& getName() const;$/;"	p	class:Person	access:public	signature:() const
+Person::mPersonImpl	Person.h	/^    PersonImpl *mPersonImpl;$/;"	m	class:Person	access:private
+Person::setAge	Person.cpp	/^void Person::setAge(int age) {$/;"	f	class:Person	signature:(int age)
+Person::setAge	Person.h	/^    void setAge(int age);$/;"	p	class:Person	access:public	signature:(int age)
+Person::setName	Person.cpp	/^void Person::setName(string& name) {$/;"	f	class:Person	signature:(string& name)
+Person::setName	Person.h	/^    void setName(string& name);$/;"	p	class:Person	access:public	signature:(string& name)
+Person::~Person	Person.cpp	/^Person::~Person() {$/;"	f	class:Person	signature:()
+Person::~Person	Person.h	/^    virtual ~Person();$/;"	p	class:Person	access:public	signature:()
+PersonImpl	PersonImpl.cpp	/^PersonImpl::PersonImpl(string& name):$/;"	f	class:PersonImpl	signature:(string& name)
+PersonImpl	PersonImpl.h	/^	PersonImpl(string& name);$/;"	p	class:PersonImpl	access:public	signature:(string& name)
+PersonImpl	PersonImpl.h	/^class PersonImpl {$/;"	c
+PersonImpl::PersonImpl	PersonImpl.cpp	/^PersonImpl::PersonImpl(string& name):$/;"	f	class:PersonImpl	signature:(string& name)
+PersonImpl::PersonImpl	PersonImpl.h	/^	PersonImpl(string& name);$/;"	p	class:PersonImpl	access:public	signature:(string& name)
+PersonImpl::getAge	PersonImpl.cpp	/^int PersonImpl::getAge() const {$/;"	f	class:PersonImpl	signature:() const
+PersonImpl::getAge	PersonImpl.h	/^	int getAge() const;$/;"	p	class:PersonImpl	access:public	signature:() const
+PersonImpl::getName	PersonImpl.cpp	/^string& PersonImpl::getName() const {$/;"	f	class:PersonImpl	signature:() const
+PersonImpl::getName	PersonImpl.h	/^	string& getName() const;$/;"	p	class:PersonImpl	access:public	signature:() const
+PersonImpl::mAge	PersonImpl.h	/^	int mAge;$/;"	m	class:PersonImpl	access:private
+PersonImpl::mName	PersonImpl.h	/^	string& mName;$/;"	m	class:PersonImpl	access:private
+PersonImpl::setAge	PersonImpl.cpp	/^void PersonImpl::setAge(int age) {$/;"	f	class:PersonImpl	signature:(int age)
+PersonImpl::setAge	PersonImpl.h	/^	void setAge(int age);$/;"	p	class:PersonImpl	access:public	signature:(int age)
+PersonImpl::setName	PersonImpl.cpp	/^void PersonImpl::setName(string& name) {$/;"	f	class:PersonImpl	signature:(string& name)
+PersonImpl::setName	PersonImpl.h	/^	void setName(string& name);$/;"	p	class:PersonImpl	access:public	signature:(string& name)
+PersonImpl::~PersonImpl	PersonImpl.cpp	/^PersonImpl::~PersonImpl() {$/;"	f	class:PersonImpl	signature:()
+PersonImpl::~PersonImpl	PersonImpl.h	/^	virtual ~PersonImpl();$/;"	p	class:PersonImpl	access:public	signature:()
+_PERSONIMPL_H	PersonImpl.h	17;"	d
+_PERSON_H	Person.h	17;"	d
+getAge	Person.cpp	/^int Person::getAge() const {$/;"	f	class:Person	signature:() const
+getAge	Person.h	/^    int getAge() const;$/;"	p	class:Person	access:public	signature:() const
+getAge	PersonImpl.cpp	/^int PersonImpl::getAge() const {$/;"	f	class:PersonImpl	signature:() const
+getAge	PersonImpl.h	/^	int getAge() const;$/;"	p	class:PersonImpl	access:public	signature:() const
+getName	Person.cpp	/^string& Person::getName() const {$/;"	f	class:Person	signature:() const
+getName	Person.h	/^    string& getName() const;$/;"	p	class:Person	access:public	signature:() const
+getName	PersonImpl.cpp	/^string& PersonImpl::getName() const {$/;"	f	class:PersonImpl	signature:() const
+getName	PersonImpl.h	/^	string& getName() const;$/;"	p	class:PersonImpl	access:public	signature:() const
+mAge	PersonImpl.h	/^	int mAge;$/;"	m	class:PersonImpl	access:private
+mName	PersonImpl.h	/^	string& mName;$/;"	m	class:PersonImpl	access:private
+mPersonImpl	Person.h	/^    PersonImpl *mPersonImpl;$/;"	m	class:Person	access:private
+main	test.cpp	/^int main(){$/;"	f	signature:()
+objects	Makefile	/^objects = Person.o PersonImpl.o	test.o$/;"	m
+setAge	Person.cpp	/^void Person::setAge(int age) {$/;"	f	class:Person	signature:(int age)
+setAge	Person.h	/^    void setAge(int age);$/;"	p	class:Person	access:public	signature:(int age)
+setAge	PersonImpl.cpp	/^void PersonImpl::setAge(int age) {$/;"	f	class:PersonImpl	signature:(int age)
+setAge	PersonImpl.h	/^	void setAge(int age);$/;"	p	class:PersonImpl	access:public	signature:(int age)
+setName	Person.cpp	/^void Person::setName(string& name) {$/;"	f	class:Person	signature:(string& name)
+setName	Person.h	/^    void setName(string& name);$/;"	p	class:Person	access:public	signature:(string& name)
+setName	PersonImpl.cpp	/^void PersonImpl::setName(string& name) {$/;"	f	class:PersonImpl	signature:(string& name)
+setName	PersonImpl.h	/^	void setName(string& name);$/;"	p	class:PersonImpl	access:public	signature:(string& name)
+~Person	Person.cpp	/^Person::~Person() {$/;"	f	class:Person	signature:()
+~Person	Person.h	/^    virtual ~Person();$/;"	p	class:Person	access:public	signature:()
+~PersonImpl	PersonImpl.cpp	/^PersonImpl::~PersonImpl() {$/;"	f	class:PersonImpl	signature:()
+~PersonImpl	PersonImpl.h	/^	virtual ~PersonImpl();$/;"	p	class:PersonImpl	access:public	signature:()
