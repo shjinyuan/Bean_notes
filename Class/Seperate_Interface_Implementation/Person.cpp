@@ -26,8 +26,7 @@ Person::~Person() {
     std::cout << "deconstruct Person" << std::endl;
 }
 
-//string& Person::getName() const {
-const string Person::getName(){
+string Person::getName(){
     return mPersonImpl->getName();
 }
 

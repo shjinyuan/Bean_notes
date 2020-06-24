@@ -24,8 +24,7 @@ public:
     Person(const string& name);
     virtual ~Person();
 
-    //string& getName() const;
-    const string getName();
+    string getName();
     void setName(string& name);
     int getAge() const;
     void setAge(int age);

@@ -21,18 +21,16 @@ using namespace std;
 
 class PersonImpl {
 public:
-	PersonImpl(const string& name);
+	PersonImpl(string name);
 	virtual ~PersonImpl();
 
-	//string& getName() const;
-	const string getName();
+	string getName();
 	void setName(string& name);
 	int getAge() const;
 	void setAge(int age);
 
 private:
 	string mName;
-	//const string& mName;
 	int mAge;
 };
 

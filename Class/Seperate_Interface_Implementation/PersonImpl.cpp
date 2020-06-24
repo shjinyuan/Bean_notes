@@ -15,7 +15,7 @@
 
 #include "PersonImpl.h"
 
-PersonImpl::PersonImpl(const string& name):
+PersonImpl::PersonImpl(string name):
     mName(name)
 {
 	printf("Construtor PersonImpl\n");
@@ -25,8 +25,7 @@ PersonImpl::~PersonImpl() {
 	printf("DeConstrutor PersonImpl\n");
 }
 
-//string& PersonImpl::getName() const {
-const string PersonImpl::getName() {
+string PersonImpl::getName(){
     return mName;
 }
 
