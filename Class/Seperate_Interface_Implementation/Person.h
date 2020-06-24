@@ -21,10 +21,11 @@ using namespace std;
 
 class Person {
 public:
-    Person(string& name);
+    Person(const string& name);
     virtual ~Person();
 
-    string& getName() const;
+    //string& getName() const;
+    const string getName();
     void setName(string& name);
     int getAge() const;
     void setAge(int age);

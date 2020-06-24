@@ -15,7 +15,7 @@
 #include "Person.h"
 #include "PersonImpl.h"
 
-Person::Person(string& name):
+Person::Person(const string& name):
     mPersonImpl(new PersonImpl(name))
 {
     std::cout << "construct Person" << std::endl;
@@ -26,7 +26,8 @@ Person::~Person() {
     std::cout << "deconstruct Person" << std::endl;
 }
 
-string& Person::getName() const {
+//string& Person::getName() const {
+const string Person::getName(){
     return mPersonImpl->getName();
 }
 

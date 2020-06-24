@@ -26,8 +26,10 @@ int main(){
 	cout << typeid(double).name()<<endl;
 	printf("Hello %s, how old are you?\n",name);// name will display as mess code.
 												//cause:https://blog.csdn.net/qq_37032670/article/details/77505841
+	printf("Hello %s, how old are you?\n",name.c_str());
 	printf("Hello %s, how old are you?\n",P.getName().c_str());
 	cout << P.getName() << endl;
+	cout << P.getName().c_str() << endl;
 }
 
 //using Date = std::string;//仅供示例，因此不实现Date类了

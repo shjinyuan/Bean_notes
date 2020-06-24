@@ -12,5 +12,5 @@ debug:
 
 .PHONY:clean
 clean:
-	rm -rf $(objects) $(objects).debug
+	rm -rf $(objects) $(objects).debug test
 
