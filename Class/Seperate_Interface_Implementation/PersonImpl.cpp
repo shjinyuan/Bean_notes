@@ -15,8 +15,9 @@
 
 #include "PersonImpl.h"
 
+//PersonImpl::PersonImpl(const string& name):
 PersonImpl::PersonImpl(string name):
-    mName(name)
+	mName(name)
 {
 	printf("Construtor PersonImpl\n");
 }
@@ -26,17 +27,17 @@ PersonImpl::~PersonImpl() {
 }
 
 string PersonImpl::getName(){
-    return mName;
+	return mName;
 }
 
 void PersonImpl::setName(string& name) {
-    mName = name;
+	mName = name;
 }
 
 int PersonImpl::getAge() const {
-    return mAge;
+	return mAge;
 }
 
 void PersonImpl::setAge(int age) {
-    mAge = age;
+	mAge = age;
 }

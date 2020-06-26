@@ -21,6 +21,7 @@ using namespace std;
 
 class PersonImpl {
 public:
+	//PersonImpl(const string& name);
 	PersonImpl(string name);
 	virtual ~PersonImpl();
 
