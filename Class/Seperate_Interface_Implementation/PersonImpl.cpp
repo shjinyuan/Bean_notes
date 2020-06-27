@@ -16,7 +16,7 @@
 #include "PersonImpl.h"
 
 //PersonImpl::PersonImpl(const string& name):
-PersonImpl::PersonImpl(string name):
+PersonImpl::PersonImpl(const string name):
 	mName(name)
 {
 	printf("Construtor PersonImpl\n");

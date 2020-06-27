@@ -22,7 +22,7 @@ using namespace std;
 class PersonImpl {
 public:
 	//PersonImpl(const string& name);
-	PersonImpl(string name);
+	PersonImpl(const string name);
 	virtual ~PersonImpl();
 
 	string getName();
