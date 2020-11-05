@@ -16,6 +16,8 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <algorithm>
+
 using namespace std;
 
 #define UPCASE(c) (((c) >= 'a' && (c) <= 'z') ? ((c) + 'A' - 'a') : (c))
@@ -23,6 +25,10 @@ using namespace std;
 
 
 #define UPcaseStr(str) UpcaseStr_case3(str)
+
+
+#define  UP_OR_LOW(test_string) #test_string
+
 
 void UpcaseStr_case1()
 {
@@ -54,6 +60,18 @@ void UpcaseStr_case3(char *str)
 	cout << __func__ << endl << tmp << endl;
 }
 
+void UpcaseStr_case4(string s)
+{
+	transform(s.begin(), s.end(), s.begin(), ::toupper);
+	cout << s << endl;
+}
+
+void LocaseStr_case5(string s)
+{
+	transform(s.begin(), s.end(), s.begin(), ::tolower);
+	cout << s << endl;
+}
+
 int main()
 {
 	UpcaseStr_case1();
@@ -65,6 +83,8 @@ int main()
 	//char *test1=(char*)"welcome";
 	UpcaseStr_case3(test1);
 
+	UpcaseStr_case4(UP_OR_LOW(yuan is form sz));
+	LocaseStr_case5(UP_OR_LOW(shangHai CHina));
 #if 0
 	char s = 'a';
 	cout << UPCASE(s) << endl;
