@@ -20,7 +20,7 @@ type "dw" continuioustypely
 	- v(isual select)
 	- > means indent to right
 	- < means indent to left
-
+	
 	- ds (tDelete Surrounding)
 	- cs (Change Surrounding)
 
@@ -68,3 +68,6 @@ type "dw" continuioustypely
 cs"<  # 成对替换双引号成尖括号
 ```
 
+### ref
+
+vim起源 https://www.oschina.net/translate/where-vim-came-from

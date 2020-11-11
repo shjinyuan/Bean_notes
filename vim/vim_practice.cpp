@@ -59,9 +59,11 @@ c/to
 "Let's go to shopping."
 "Let's go to shopping."
 "Let's go to shopping."
+":left
 "Let's go to shopping."
-
+":center
 							"Let's go to shopping."
+":right
 														 "Let's go to shopping."
 "Let's go to shopping."
 "Let's go to shopping."
