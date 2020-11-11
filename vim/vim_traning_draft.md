@@ -20,7 +20,7 @@ type "dw" continuioustypely
 	- v(isual select)
 	- > means indent to right
 	- < means indent to left
-	
+
 	- ds (tDelete Surrounding)
 	- cs (Change Surrounding)
 
@@ -37,8 +37,8 @@ type "dw" continuioustypely
 	- it means "inner tag for HTML"
 #### parameterized text objects(search the postion)
 	- f,F
-	  - t,T
-		- \
+	- t,T
+	- \
 
 #### relativenumber
 :set relativenumber
