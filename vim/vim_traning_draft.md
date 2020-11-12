@@ -71,3 +71,49 @@ cs"<  # 成对替换双引号成尖括号
 ### ref
 
 vim起源 https://www.oschina.net/translate/where-vim-came-from
+
+
+
+
+
+
+
+### show time
+
+```
+csope+tag 生成
+
+跳转 ctrl +] 
+ctrl+o ，ctrl+i
+
+cs"<  # 成对替换双引号成尖括号
+
+git 修改痕迹
+
+Gitblame
+
+buffeer
+
+多窗口切换
+
+窗口大小转换
+
+多光标编辑
+
+%s 替换
+
+历史修改查找
+
+空格mv
+空格af
+空格te
+
+宏
+
+
+```
+
+
+
+
+
