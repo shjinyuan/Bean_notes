@@ -1,5 +1,5 @@
 /*
- * Filename: main.cpp
+ * Filename: test.h
  *
  * Copyright (C) 2018-2023 yuan  <yuan@company.com>. All Rights Reserved.
  *
@@ -12,15 +12,22 @@
  *    Version: v0.0.01
  *
  */
-#include <iostream>
-#include <bitset>
-#include "test.h"
+
+#ifndef _TEST_H
+#define _TEST_H
 
 
-
-int main()
+class A_Test
 {
-	A_Test a;
-	a.print(1, 3.1415, "Hello, world!", 1.618, true, std::bitset<16>(377), 40);
-	return 0;
-}
+public:
+	void print() {}
+
+	template<typename Type, typename... Types>
+	void print(const Type &arg, const Types &... args)
+	{
+		std::cout << arg << std::endl;
+		print(args...);
+	}
+
+};
+#endif
