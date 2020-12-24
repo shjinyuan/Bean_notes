@@ -14,12 +14,13 @@
  */
 #include<unistd.h>
 #include<semaphore.h>
-#include<pthread.h>
 #include<signal.h>
 #include<cstring>
 #include<cstdlib>
 #include<cstdio>
 #include<iostream>
+#include<thread>
+
 struct Syn_info {
 	Syn_info()
 	{
@@ -76,13 +77,12 @@ void *reader(void *arg)
 }
 int main(int argc, char **argv)
 {
-	pthread_t *tid = new pthread_t[10]();
 	Syn_info *info = new Syn_info();
 	for (int index = 0; index != 10; index++) {
 		if (index < 5) {
-			pthread_create(tid + index, NULL, writer, (void *)info);
+			std::thread(writer, (void *)info).detach();
 		} else {
-			pthread_create(tid + index, NULL, reader, (void *)info);
+			std::thread(reader, (void *)info).detach();
 		}
 	}
 	pause();

@@ -28,8 +28,9 @@ int customers = 0;
 int barbers = 1;
 condition_variable cv_barbers; // 当有顾客到时需通知理发师
 mutex chairs_mtx, cus_mtx, bar_mtx;
-int customer_id = 1;
+//int customer_id = 1;
 
+bool is_first_one = true;
 
 /**
 * 理发师进程，阻塞理发师的请况
@@ -44,10 +45,11 @@ void barber(int i)
 		cv_barbers.wait(lck, [] {
 			if (customers > 0)
 			{
-				cout << "有顾客，理发师被唤醒" << endl;
-				return true;
-			} else
-			{
+				//if (is_first_one) {
+					cout << "有顾客，理发师被唤醒" << endl;
+					return true;
+				//}
+			} else {
 				cout << "没有顾客，理发师睡觉" << endl;
 				return false;
 			}
@@ -56,7 +58,7 @@ void barber(int i)
 		customers--;
 		empty_chairs++;
 		/* cut hair*/
-		cout << "理发师给顾客"<< "理发" << endl;
+		cout << "理发师给顾客理发" << endl;
 		lck2.unlock();
 		// 理发时不断有顾客进来
 		this_thread::sleep_for(std::chrono::microseconds(10));
@@ -72,6 +74,9 @@ void customer(int i)
 {
 	unique_lock<mutex> lck(chairs_mtx);
 	if (empty_chairs > 0) {
+		if (empty_chairs == chairs) {
+			is_first_one = true;
+		}
 		empty_chairs--;
 		customers++;
 		cv_barbers.notify_one();

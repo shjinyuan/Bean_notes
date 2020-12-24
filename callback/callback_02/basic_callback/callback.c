@@ -13,17 +13,17 @@
  *
  */
 #include <stdio.h>
-void printWelcome(int len)
+void printWelcome(int len)//callback1
 {
        printf("欢迎欢迎 -- %d\n", len);
 }
 
-void printGoodbye(int len)
+void printGoodbye(int len)//callback2
 {
        printf("送客送客 -- %d\n", len);
 }
 
-void callback(int times, void (* print)(int))
+void regist_callback(int times, void (* print)(int))
 {
        int i;
        for (i = 0; i < times; ++i)
@@ -35,7 +35,7 @@ void callback(int times, void (* print)(int))
 
 void main(void)
 {
-       callback(10, printWelcome);
-       callback(10, printGoodbye);
+       regist_callback(10, printWelcome);
+       regist_callback(10, printGoodbye);
        printWelcome(5);
 }
